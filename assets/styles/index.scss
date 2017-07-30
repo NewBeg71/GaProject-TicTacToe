@@ -1,2 +1,55 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+.one_one{
+  border: 0px 1px 1px 0px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.one_two{
+  border: 0px 0px 1px 0px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.one_three{
+  border: 0px 0px 1px 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.two_one{
+  border: 0px 1px 1px 0px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.two_two{
+  border: 0px 0px 1px 0px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.two_three{
+  border: 0px 0px 1px 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.three_one{
+  border: 0px 1px 0px 0px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.three_two{
+  border: 0px 1px 0px 0px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.three_three{
+  border: 0px;
+  height: 50px;
+  width: 50px;
+}
