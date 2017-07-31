@@ -1,0 +1,78 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+#navBar {
+  display:inline-block;
+}
+
+#one_one {
+  border: solid black;
+  border-width: 0px 1px 1px 0px;
+  /* border: solid black; */
+  height: 86px;
+  width: 104px;
+}
+
+#one_two {
+  border: solid black;
+  border-width: 0px 0px 1px 0px;
+  height: 86px;
+  width: 104px;
+}
+
+#one_three {
+  border: solid black;
+  border-width: 0px 0px 1px 1px;
+  height: 86px;
+  width: 104px;
+}
+
+#two_one {
+  border: solid black;
+  border-width: 0px 1px 1px 0px;
+  height: 86px;
+  width: 104px;
+}
+
+#two_two {
+  border: solid black;
+  border-width: 0px 0px 1px 0px;
+  height: 86px;
+  width: 104px;
+}
+
+#two_three {
+  border: solid black;
+  border-width: 0px 0px 1px 1px;
+  height: 86px;
+  width: 104px;
+}
+
+#three_one {
+  border: solid black;
+  border-width: 0px 1px 0px 0px;
+  height: 86px;
+  width: 104px;
+}
+
+#three_two {
+  border: solid black;
+  border-width: 0px 1px 0px 0px;
+  height: 86px;
+  width: 104px;
+}
+
+#three_three {
+  border: solid black;
+  border-width: 0px;
+  height: 86px;
+  width: 104px;
+}
+
+#footerContact {
+  text-align: center;
+}
+
+a:hover {
+  background-color: red;
+}
