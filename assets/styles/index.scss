@@ -1,5 +1,9 @@
-$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
-@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+/* $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap'; */
+#navBar{
+  display:inline-block;
+}
+
 .one_one{
   border: 0px 1px 1px 0px solid black;
   height: 50px;

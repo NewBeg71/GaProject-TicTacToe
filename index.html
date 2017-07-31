@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
     <head>
       <title>Example</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
+      Do not add `link` tags
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <!-- Do not add `script` tags-->
+      Do not add `script` tag
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
@@ -22,43 +22,73 @@
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.</p>
     </body>
-</html>
+</html>-->
+
 <!DOCTYPE html>
+
 <html>
 
   <head>
+
     <meta charset="utf-8">
-    <link href = "tictactoe.css" rel = "stylesheet" type = "text/css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href = "./assets/styles/index.scss" rel = "stylesheet" type = "text/css"/>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
     <title>Tic-Tac-Toe</title>
 
   </head>
-  <body>
+
+  <body class ="container">
+
     <header>
 
-        <h1>Tic Tac Toe</h1>
+        <h1 = "col-sm-12">Tic Tac Toe<small>A Game of Stratergy</small></h1>
 
     </header>
 
-    <nav>
+    <section class= "container" id = "navBar">
 
       <!--sign up--> <!--and sign inbuttons/forms-->
-      <form>
-        <input type = "" />
-      </form>
+      <!--<div = "col-sm-3">-->
+
+        <div class = "col-sm-3" id = "signUp">
+          <input type = "" />
+        </div>
+
+      <!--</div>-->
 
       <!--and sign inbuttons/forms-->
-      <form>
-        <input type = "" />
-      </form>
+      <!--<div class = "col-sm-3">-->
 
+        <div class = "col-sm-3" id = "signUp">
+          <input type = "" />
+        </div>
 
+      <!--</div>-->
 
-    </nav>
+      <div = "col-sm-6">
+        <h3>Have Fun!</h3>
+      </div>
 
-    <section id ='game-board' class = 'clear-fix'>
+    </section>
 
-      <table>
+    <section class = "container" id = "mainPage">
+
+      <div class = "col-sm-8">
+
+        <table>
 
           <tr>
 
@@ -84,19 +114,19 @@
 
           </tr>
 
-      </table>
+        </table>
 
-    </section>
+      </div>
 
-    <aside>
+      <div class = "col-sm-4">
 
       <div>
-        <img src="images/" />
+        <img src = "./Images/deadlogo.jpg" class="img-rounded" alt="Dead Head" width="104" height="86"/>
         <h3>Player 1</h3>
       </div>
 
       <div>
-        <img src="images" />
+        <img src = "./Images/buffet logo.jpg" class="img-rounded" alt="Parrot Head" width="104" height="86"/>
         <h3>Player 2</h3>
       </div>
 
@@ -115,20 +145,29 @@
 
       <div>
 
+        <h3> Cat's Games<small>    This is a tie!</small></h3>
+
+      </div>
+
+      <div>
+
         <button id = 'reset'>Play Again</button>
 
       </div>
 
-    </aside>
+    </div>
 
-    <footer>
+  </section>
 
-      <p class = footerContact>If you have any suggestions or comments contact me here<a href="mailto:dfwg4@hotmail.com">email </a></p>
+    <section class = "container" id = "footer">
 
-    </footer>
+      <p class = "col-sm-12" id = "footerContact">If you have any suggestions or comments contact me here<a href="mailto:dfwg4@hotmail.com">email </a></p>
 
-    <script src = "tictactoe.js"></script>
+    </section>
 
+    <!--<script src = "tictactoe.js"></script>-->
+    <!--<script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>-->
   </body>
 
 </html>
