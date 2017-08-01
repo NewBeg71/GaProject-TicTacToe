@@ -1,14 +1,60 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-#navBar {
-  display:inline-block;
+html body {
+  background-color: salmon !important;
+  margin: 0 auto;
+  padding: 25px;
 }
+
+#headBar {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: lavender;
+}
+
+#mainPage {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: tan;
+}
+
+#navBar {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: beige;
+}
+
+#greeting {
+  margin: 0 auto;
+  font-style: italic;
+}
+
+#left_main {
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-left: 200px;
+}
+
+#right_main {
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+ }
 
 #one_one {
   border: solid black;
   border-width: 0px 1px 1px 0px;
-  /* border: solid black; */
   height: 86px;
   width: 104px;
 }
@@ -70,7 +116,13 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 #footerContact {
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
+  background-color: beige;
 }
 
 a:hover {

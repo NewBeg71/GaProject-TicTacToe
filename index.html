@@ -1,29 +1,3 @@
-<!--<!DOCTYPE html>
-<html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      Do not add `link` tags
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-      Do not add `script` tag
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
-    </body>
-</html>-->
-
 <!DOCTYPE html>
 
 <html>
@@ -33,8 +7,6 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 
 <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -47,18 +19,21 @@
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 
-
     <title>Tic-Tac-Toe</title>
 
   </head>
 
-  <body class ="container">
+  <body>
 
-    <header>
+    <section class = "container" id = "headBar">
 
-        <h1 = "col-sm-12">Tic Tac Toe<small> A Game of Stratergy</small></h1>
+        <div class = 'col-sm-12' id ="headBar">
 
-    </header>
+          <h1>Tic Tac Toe<small> A game of stratergy</small></h1>
+
+        </div>
+
+    </section>
 
     <section class= "container" id = "navBar">
 
@@ -72,8 +47,6 @@
 
         </div>
 
-      <!--</div>-->
-
       <!--and sign inbuttons/forms-->
       <!--<div class = "col-sm-3">-->
 
@@ -83,33 +56,15 @@
           <!--<input type = "" />-->
         </div>
 
-      <!--</div>-->
-
       <div = "col-sm-6">
-        <h3>Have Fun!</h3>
+        <h3 id ='greeting'>Have Fun!</h3>
       </div>
 
     </section>
 
     <section class = "container" id = "mainPage">
 
-<!--FOLLOWING WAS ADDED WHEN TRYING TO PUSH-->
-      <!--<div class = "col-sm-3" id = "signUp">
-          <input type = "" />
-        </div>-->
-
-      <!--</div>-->
-
-      <!--<div = "col-sm-6">
-        <h3>Have Fun!</h3>
-      </div>-->
-
-    </section>
-
-    <section class = "container" id = "mainPage">
-
-
-      <div class = "col-sm-8">
+      <div class = "col-sm-8" id = 'left_main'>
 
         <table>
 
@@ -141,16 +96,16 @@
 
       </div>
 
-      <div class = "col-sm-4">
+      <div class = "col-sm-4" id ='right_main'>
 
       <div>
-        <img src = "./Images/deadlogo.jpg" class="img-rounded" alt="Dead Head" width="104" height="86"/>
-        <h3>Player 1</h3>
+        <img src = "./Images/deadlogo.jpg" class="img-rounded" id = "deadLogo" alt="Dead Head" width="104" height="86"/>
+        <h6>Player 1</h6>
       </div>
 
       <div>
         <img src = "./Images/buffet logo.jpg" class="img-rounded" alt="Parrot Head" width="104" height="86"/>
-        <h3>Player 2</h3>
+        <h6>Player 2</h6>
       </div>
 
       <div>
@@ -163,12 +118,11 @@
 
         <h3>Player 2 wins</h3>
 
-
       </div>
 
       <div>
 
-        <h3> Cat's Games<small>    This is a tie!</small></h3>
+        <h3> Cat's Games<small> This is a tie!</small></h3>
 
       </div>
 
@@ -184,11 +138,11 @@
 
     <section class = "container" id = "footer">
 
-      <p class = "col-sm-12" id = "footerContact">If you have any suggestions or comments contact me here<a href="mailto:dfwg4@hotmail.com"> email </a></p>
+      <div class = "col-sm-12" id = "footerContact">If you have any suggestions or comments contact me here<a href="mailto:dfwg4@hotmail.com"> email </a></div>
 
     </section>
 
-    <script src = "./assets/scripts/myindexTic.js"></script>-->
+    <script src = "./assets/scripts/myindexTic.js"></script>
 
   </body>
 
