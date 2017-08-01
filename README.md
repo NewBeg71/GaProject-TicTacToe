@@ -26,6 +26,7 @@
 - Communicate with a back-end (which we'll provide for you) to store the state of your game.
 
 ## Design Responsibly
+### Need to complete
 
 - A wireframe of what your game project will look like.
 - The data structure you plan to use.
