@@ -17,6 +17,16 @@ require('./example')
 
 // Create a Sign-in Button
 // onClick Button brings up an input form to verify the user
+// BEFORE USING ABOVE BUTTONS TO INITIATE THE GAME JUST GET IT Working
+
+$(document).ready(function (){
+  const var x = 'X' //if get this working add image
+  const var o = 'O'
+  const var turns = 0
+  $('table td').onClick('click', function(){
+    
+  })
+})
 
 // Function to take image and place in grid
 // Make sure can not enter another time
@@ -25,8 +35,7 @@ let playerOneTurn = true
 
 const playerOneImage = function () {
   if (playerOneTurn === true) {
-    alert('Player 1 Click on your placement choice')}
-  if (playerOneTurn === true) {
+    alert('Player 1 Click on your placement choice')
     $( ".cell" ).click(function() {
       $('.cell').onCLick.append("<img src = './Images/deadlogo.jpg' />")
     } )
