@@ -24,17 +24,23 @@ require('./example')
 let playerOneTurn = true
 
 const playerOneImage = function () {
-  alert('Player 1 Click on your placement choice')
   if (playerOneTurn === true) {
-    $('.cell').onCLick.append("#deadLogo")
-    /* document.getElementById('cell').append('deadLogo') */
-  } else {
-    playerOneTurn = false
-    let playerTwoTurn = true
+    alert('Player 1 Click on your placement choice')}
+  if (playerOneTurn === true) {
+    $( ".cell" ).click(function() {
+      $('.cell').onCLick.append("<img src = './Images/deadlogo.jpg' />")
+    } )
+    } else {
+      playerOneTurn = false
+      let playerTwoTurn = true
+    }
   }
-  console.log('something')
-  playerOneImage()
-}
+
+console.log('something')
+// playerOneImage()
+
+
+
   const playerTwoImage = function () {
     alert('Player 1 Click on your placement choice')
     if (playerTwoTurn === true) {
