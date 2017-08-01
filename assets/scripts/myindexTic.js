@@ -1,3 +1,18 @@
+'use strict'
+
+const setAPIOrigin = require('../../lib/set-api-origin')
+const config = require('./config')
+
+$(() => {
+  setAPIOrigin(location, config)
+})
+
+// use require with a reference to bundle the file and use it in this file
+// const example = require('./example')
+
+// use require without a reference to ensure a file is bundled
+require('./example')
+
 // Create a Sign-up Button
 
 // Create a Sign-in Button
@@ -11,20 +26,24 @@ let playerOneTurn = true
 const playerOneImage = function () {
   alert('Player 1 Click on your placement choice')
   if (playerOneTurn === true) {
-    document.getElementById('cell').append('deadLogo')
+    $('.cell').onCLick.append("#deadLogo")
+    /* document.getElementById('cell').append('deadLogo') */
   } else {
     playerOneTurn = false
     let playerTwoTurn = true
   }
+  console.log('something')
   playerOneImage()
 }
   const playerTwoImage = function () {
     alert('Player 1 Click on your placement choice')
     if (playerTwoTurn === true) {
-      document.getElementById('cell').append('buffetLogo')
+    $('.cell').onCLick.append("#buffetLogo")
+    /* document.getElementById('cell').append('buffetLogo') */
     } else {
     }
-    playerOneTurn = false
+    playerTwoTurn = false
+    let playerOneTurn = true
   }
   playerTwoImage()
 }
@@ -37,7 +56,7 @@ const playerOneWins = 0
 
 const winner = function (){
 
-
+}
 // counter to track wins/losses/ties
 // after images are placedin td cells
 const winner = function () {
@@ -58,5 +77,8 @@ const winner = function () {
 
 // return playerOneWins + 1
 // return playerTwoWins + 1
-}
+
 // Reset button
+ const reset = funtion () {
+
+ }
