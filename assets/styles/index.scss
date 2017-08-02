@@ -119,8 +119,38 @@ body {
   width: 104px;
 }
 
+.cell {
+  font-size: 50px;
+  font-family: Arial;
+  font-style: bold;
+  font-color: black;
+  text-align: center;
+}
+
 table td:hover {
   background-color: yellow;
+}
+
+.O {
+  font-size: 50px;
+  font-family: Arial;
+  font-style: bold;
+  font-color: red;
+  text-align: center;
+}
+
+.X {
+  font-size: 50px;
+  font-family: Arial;
+  font-style: bold;
+  font-color: green;
+  text-align: center;
+}
+
+#reset {
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
 }
 
 #footerContact {
