@@ -21,9 +21,9 @@ require('./example')
 // Continue creating variables & functions individually => nest
 
 $(document).ready(function (){
-  const x = 'X' //if get this working add image
-  const o = 'O'
-  const turns = 0
+  const x = 'X' // X=Player2//if get this working add image
+  const o = 'O' //O=Player2
+  let turns = 0
   $('table td').on('click', function(){
     // console.log('something') - seems to be working - move on
   })
@@ -62,13 +62,13 @@ console.log('something')
     let playerOneTurn = true
   }
   playerTwoImage()
-}
+
 
 // Player 2 goes
 
 // Check for winer times
 const playerOneWins = 0
-const playerOneWins = 0
+const playerTwoWins = 0
 
 const winner = function (){
 
@@ -86,7 +86,7 @@ const three_two =$('#three_two')
 const three_three =$('#three_three')
 
 $('td').on('click', function () {
- // if logic works place above in this function
+ // if logic works place above nested in the first function
 }
 // check rows
   if(#one_one.hasClass('0') && #one_two.hasClass('0') && #one_three.hasClass('0')) || // {return true}
@@ -99,14 +99,47 @@ $('td').on('click', function () {
     (#one_three.hasClass('0') === #two_three.hasClass('0') === #three_three.hasClass('0')) || // {return true}
 
 // check diagnolas
-  (#one_one.hasClass('0') === #two_#two.hasClass('0') === #three_three.hasClass('0')) || // {return true}
-  (#one_three.hasClass('0') === #two_#two.hasClass('0')) === #three_one.hasClass('0')) // {return true}
- else // {return false}
-
+    (#one_one.hasClass('0') === #two_#two.hasClass('0') === #three_three.hasClass('0')) || // {return true}
+    (#one_three.hasClass('0') === #two_#two.hasClass('0')) === #three_one.hasClass('0')) {// {return true}
+      alert('Winner is Player 1')
+      // need to not allow another entry ??removeClass?? - look at documentation
+      $('table td').text('+')
+      $('table td').removeClass('disable')
+      $('table td').removeClass('O')
+      $('table td').removeClass('X')
+      }
+  else if
+    (#one_one.hasClass('X') && #one_two.hasClass('X') && #one_three.hasClass('X')) || // {return true}
+    (#two_one.hasClass('X') && #two_two.hasClass('X') && #two_three.hasClass('X')) || // {return true}
+    (#three_one.hasClass('X') && #three_two.hasClass('X') && #three_three.hasClass('X')) // {return true}
+    (#one_one.hasClass('X') && #two_one.hasClass('X') && #three_one.hasClass('X')) ||// {return true}
+    (#one_two.hasClass('X') === #two_two.hasClass('X') === #three_two.hasClass('X')) || // {return true}
+    (#one_three.hasClass('X') === #two_three.hasClass('X') === #three_three.hasClass('X')) || // {return true}
+    (#one_one.hasClass('X') === #two_#two.hasClass('X') === #three_three.hasClass('X')) || // {return true}
+    (#one_three.hasClass('X') === #two_#two.hasClass('X')) === #three_one.hasClass('X')) {// {return true}
+      alert('Winner is Player 2'){
+    // need to not allow another entry ??removeClass?? - look at documentation
+    $('table td').text('+')
+    $('table td').removeClass('disable')
+    $('table td').removeClass('O')
+    $('table td').removeClass('X')
+ }
+ else if
+    (turns === 9) { // {return false}
+      alert('Cat\'s Game: A Tie!')
+      $('table td').text('+')
+      $('table td').removeClass('disable')
+      $('table td').removeClass('O')
+      $('table td').removeClass('X')
+}
 // return playerOneWins + 1
 // return playerTwoWins + 1
 
-// Reset button
- const reset = funtion () {
-
- }
+// Reset button - end of all code
+$('reset').on('click', function () {
+  $('table td').text('+')
+  $('table td').removeClass('disable')
+  $('table td').removeClass('O')
+  $('table td').removeClass('X')
+  let turns = 0
+})
