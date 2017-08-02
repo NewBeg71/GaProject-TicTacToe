@@ -30,14 +30,14 @@ $(document).ready(function (){
 
   $('#boardContainer td').on('click', function() {
 
-      if(one_one.hasClass('O') && one_two.hasClass('O') && one_three.hasClass('O')) ||
-        (two_one.hasClass('O') && two_two.hasClass('O') && two_three.hasClass('O')) ||
-        (three_one.hasClass('O') && three_two.hasClass('O') && three_three.hasClass('O')) ||
-        (one_on.hasClass('O') && two_one.hasClass('O') && three_one.hasClass('O')) ||
-        (one_two.hasClass('O') && two_two.hasClass('O') && three_two.hasClass('O')) ||
-        (one_three.hasClass('O') && two_three.hasClass('O') && three_three.hasClass('O')) ||
-        (one_one.hasClass('O') && two_two.hasClass('O') && three_three.hasClass('O')) ||
-        (one_three.hasClass('O') && two_two.hasClass('O') && three_one.hasClass('O')) {
+      if(one_one.hasClass('O') && one_two.hasClass('O') && one_three.hasClass('O') ||
+        two_one.hasClass('O') && two_two.hasClass('O') && two_three.hasClass('O') ||
+        three_one.hasClass('O') && three_two.hasClass('O') && three_three.hasClass('O') ||
+        one_on.hasClass('O') && two_one.hasClass('O') && three_one.hasClass('O') ||
+        one_two.hasClass('O') && two_two.hasClass('O') && three_two.hasClass('O') ||
+        one_three.hasClass('O') && two_three.hasClass('O') && three_three.hasClass('O') ||
+        one_one.hasClass('O') && two_two.hasClass('O') && three_three.hasClass('O') ||
+        one_three.hasClass('O') && two_two.hasClass('O') && three_one.hasClass('O')) {
           alert('Winner is Player 1')
           $('#boardContainer td').text('+')
           $('#boardContainer td').removeClass('disable')
@@ -45,14 +45,14 @@ $(document).ready(function (){
           $('#boardContainer td').removeClass('X')
           }
       else if
-        (one_one.hasClass('X') && one_two.hasClass('X') && one_three.hasClass('X')) ||
-        (two_one.hasClass('X') && two_two.hasClass('X') && two_three.hasClass('X')) ||
-        (three_one.hasClass('X') && three_two.hasClass('X') && three_three.hasClass('X'))
-        (one_one.hasClass('X') && two_one.hasClass('X') && three_one.hasClass('X')) ||
-        (one_two.hasClass('X') && two_two.hasClass('X') && three_two.hasClass('X')) ||
-        (one_three.hasClass('X') && two_three.hasClass('X') && three_three.hasClass('X')) ||
-        (one_one.hasClass('X') && two_#two.hasClass('X') && three_three.hasClass('X')) ||
-        (one_three.hasClass('X') && two_#two.hasClass('X') && three_one.hasClass('X')) {
+        (one_one.hasClass('X') && one_two.hasClass('X') && one_three.hasClass('X') ||
+        two_one.hasClass('X') && two_two.hasClass('X') && two_three.hasClass('X') ||
+        three_one.hasClass('X') && three_two.hasClass('X') && three_three.hasClass('X') ||
+        one_one.hasClass('X') && two_one.hasClass('X') && three_one.hasClass('X') ||
+        one_two.hasClass('X') && two_two.hasClass('X') && three_two.hasClass('X') ||
+        one_three.hasClass('X') && two_three.hasClass('X') && three_three.hasClass('X') ||
+        one_one.hasClass('X') && two_two.hasClass('X') && three_three.hasClass('X') ||
+        one_three.hasClass('X') && two_two.hasClass('X') && three_one.hasClass('X')) {
           alert('Winner is Player 2')
           $('#boardContainer td').text('+')
           $('#boardContainer td').removeClass('disable')
@@ -68,36 +68,37 @@ $(document).ready(function (){
           $('#boardContainer td').removeClass('X')
     }
     else if
-      ($(this).hasClass('disable')){
+      ($(this).hasClass('disable')) {
         alert('This cell has already been selected!')
       }
       else if
-        (turns % 2 == 0)
+        (turns % 2 == 0) {
           turns ++
           $(this).text('O')
-          $(this)addClass('disable O')
-          (one_one.hasClass('O') && one_two.hasClass('O') && one_three.hasClass('O')) ||
-          (two_one.hasClass('O') && two_two.hasClass('O') && two_three.hasClass('O')) ||
-          (three_one.hasClass('O') && three_two.hasClass('O') && three_three.hasClass('O'))
-          (one_one.hasClass('O') && two_one.hasClass('O') && three_one.hasClass('O')) ||
-          (one_two.hasClass('O') && two_two.hasClass('O') && three_two.hasClass('O')) ||
-          (one_three.hasClass('O') && two_three.hasClass('O') && three_three.hasClass('O')) ||
-          (one_one.hasClass('O') && two_two.hasClass('O') && three_three.hasClass('O')) ||
-          (one_three.hasClass('O') && two_two.hasClass('O') && three_one.hasClass('O')) {
+          $(this).addClass('disable O')
+          if (one_one.hasClass('O') && one_two.hasClass('O') && one_three.hasClass('O') ||
+          two_one.hasClass('O') && two_two.hasClass('O') && two_three.hasClass('O') ||
+          three_one.hasClass('O') && three_two.hasClass('O') && three_three.hasClass('O') ||
+          one_one.hasClass('O') && two_one.hasClass('O') && three_one.hasClass('O') ||
+          one_two.hasClass('O') && two_two.hasClass('O') && three_two.hasClass('O') ||
+          one_three.hasClass('O') && two_three.hasClass('O') && three_three.hasClass('O') ||
+          one_one.hasClass('O') && two_two.hasClass('O') && three_three.hasClass('O') ||
+          one_three.hasClass('O') && two_two.hasClass('O') && three_one.hasClass('O')) {
             alert('Winner is Player 1')
             turns = 0
           }
         else {
           turns ++
-          $(this).addClass('disable')
-          (one_one.hasClass('X') && one_two.hasClass('X') && one_three.hasClass('X')) ||
-          (two_one.hasClass('X') && two_two.hasClass('X') && two_three.hasClass('X')) ||
-          (three_one.hasClass('X') && three_two.hasClass('X') && three_three.hasClass('X'))
-          (one_one.hasClass('X') && two_one.hasClass('X') && three_one.hasClass('X')) ||
-          (one_two.hasClass('X') && two_two.hasClass('X') && three_two.hasClass('X')) ||
-          (one_three.hasClass('X') && two_three.hasClass('X') && three_three.hasClass('X')) ||
-          (one_one.hasClass('X') && two_#two.hasClass('X') && three_three.hasClass('X')) ||
-          (one_three.hasClass('X') && two_#two.hasClass('X') && three_one.hasClass('X')) {
+          $(this).text('X')
+          $(this).addClass('disable X')
+          if (one_one.hasClass('X') && one_two.hasClass('X') && one_three.hasClass('X') ||
+          two_one.hasClass('X') && two_two.hasClass('X') && two_three.hasClass('X') ||
+          three_one.hasClass('X') && three_two.hasClass('X') && three_three.hasClass('X') ||
+          one_one.hasClass('X') && two_one.hasClass('X') && three_one.hasClass('X') ||
+          one_two.hasClass('X') && two_two.hasClass('X') && three_two.hasClass('X') ||
+          one_three.hasClass('X') && two_three.hasClass('X') && three_three.hasClass('X') ||
+          one_one.hasClass('X') && two_two.hasClass('X') && three_three.hasClass('X') ||
+          one_three.hasClass('X') && two_two.hasClass('X') && three_one.hasClass('X')) {
             alert('Winner is Player 2')
           }
           $('reset').on('click', function () {
@@ -107,8 +108,7 @@ $(document).ready(function (){
             $('#boardContainer td').removeClass('X')
             let turns = 0
     })
-  })
-})
+}
 
 // Function to take image and place in grid
 // Make sure can not enter another time
