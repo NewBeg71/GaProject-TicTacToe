@@ -18,13 +18,14 @@ require('./example')
 // Create a Sign-in Button
 // onClick Button brings up an input form to verify the user
 // BEFORE USING ABOVE BUTTONS TO INITIATE THE GAME JUST GET IT Working
+// Continue creating variables & functions individually => nest
 
 $(document).ready(function (){
-  const var x = 'X' //if get this working add image
-  const var o = 'O'
-  const var turns = 0
-  $('table td').onClick('click', function(){
-    
+  const x = 'X' //if get this working add image
+  const o = 'O'
+  const turns = 0
+  $('table td').on('click', function(){
+    // console.log('something') - seems to be working - move on
   })
 })
 
@@ -36,7 +37,7 @@ let playerOneTurn = true
 const playerOneImage = function () {
   if (playerOneTurn === true) {
     alert('Player 1 Click on your placement choice')
-    $( ".cell" ).click(function() {
+    $( ".cell" ).on('click', function() {
       $('.cell').onCLick.append("<img src = './Images/deadlogo.jpg' />")
     } )
     } else {
@@ -65,7 +66,7 @@ console.log('something')
 
 // Player 2 goes
 
-// Check for winer time
+// Check for winer times
 const playerOneWins = 0
 const playerOneWins = 0
 
@@ -74,21 +75,33 @@ const winner = function (){
 }
 // counter to track wins/losses/ties
 // after images are placedin td cells
-const winner = function () {
+const one_one =$('#one-one')
+const one_two =$('#one_two')
+const one_three =$('#one_three')
+const two_one =$('#two_one')
+const two_two =$('#two_two')
+const two_three =$('#two_three')
+const three_one =$('#three_one')
+const three_two =$('#three_two')
+const three_three =$('#three_three')
+
+$('td').on('click', function () {
+ // if logic works place above in this function
+}
 // check rows
-  if(#one_one === #one_two === #one_three) {return true}
-  if(#two_one === #two_two === #two_three) {return true}
-  if(#three_one === #three_two === #three_three) {return true}
+  if(#one_one.hasClass('0') && #one_two.hasClass('0') && #one_three.hasClass('0')) || // {return true}
+    (#two_one.hasClass('0') && #two_two.hasClass('0') && #two_three.hasClass('0')) || // {return true}
+    (#three_one.hasClass('0') && #three_two.hasClass('0') && #three_three.hasClass('0')) // {return true}
 
 //check columns
-  if(#one_one === #two_one === #three_one) {return true}
-  if(#one_two === #two_two === #three_two) {return true}
-  if(#one_three === #two_three === #three_three) {return true}
+    (#one_one.hasClass('0') && #two_one.hasClass('0') && #three_one.hasClass('0')) ||// {return true}
+    (#one_two.hasClass('0') === #two_two.hasClass('0') === #three_two.hasClass('0')) || // {return true}
+    (#one_three.hasClass('0') === #two_three.hasClass('0') === #three_three.hasClass('0')) || // {return true}
 
 // check diagnolas
- if(#one_one === #two_#two === #three_three) {return true}
- if(#one_three === #two_#two) === #three_one) {return true}
- else{return false}
+  (#one_one.hasClass('0') === #two_#two.hasClass('0') === #three_three.hasClass('0')) || // {return true}
+  (#one_three.hasClass('0') === #two_#two.hasClass('0')) === #three_one.hasClass('0')) // {return true}
+ else // {return false}
 
 // return playerOneWins + 1
 // return playerTwoWins + 1
