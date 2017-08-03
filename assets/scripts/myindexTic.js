@@ -41,7 +41,7 @@ $(document).ready(function () {
         one_three.hasClass('O') && two_three.hasClass('O') && three_three.hasClass('O') ||
         one_one.hasClass('O') && two_two.hasClass('O') && three_three.hasClass('O') ||
         one_three.hasClass('O') && two_two.hasClass('O') && three_one.hasClass('O')) {
-      alert('Winner is Player 1' + scoreOne + 'wins')
+      alert('Winner is Player 1')
       $('#boardContainer tr td').text('+')
       $('#boardContainer tr td').removeClass('disable')
       $('#boardContainer tr td').removeClass('O')
@@ -63,6 +63,8 @@ $(document).ready(function () {
     } else if
     (turns === 8) {
       alert('Cat\'s Game: A Tie!')
+      scoreTie = scoreTie + 1
+      $('#spanT').html(scoreTie)
       $('#boardContainer tr td').text('+')
       $('#boardContainer tr td').removeClass('disable')
       $('#boardContainer tr td').removeClass('O')
@@ -84,6 +86,8 @@ $(document).ready(function () {
       one_one.hasClass('O') && two_two.hasClass('O') && three_three.hasClass('O') ||
       one_three.hasClass('O') && two_two.hasClass('O') && three_one.hasClass('O')) {
         alert('Winner is Player 1')
+        scoreOne = scoreOne + 1
+        $('#span1').html(scoreOne)
         turns = 0
       }
     } else {
@@ -99,6 +103,8 @@ $(document).ready(function () {
       one_one.hasClass('X') && two_two.hasClass('X') && three_three.hasClass('X') ||
       one_three.hasClass('X') && two_two.hasClass('X') && three_one.hasClass('X')) {
         alert('Winner is Player 2')
+        scoreTwo = scoreTwo + 1
+        $('#span2').html(scoreTwo)
       }
     }
   })
