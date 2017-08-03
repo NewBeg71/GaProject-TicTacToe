@@ -13,14 +13,6 @@ require('./example')
 
 // Create a Sign-in Button
 // onClick Button brings up an input form to verify the user
-// alert('something')
-
-// console.log('something')
-
-// const test = function () {
-// console.log('something')
-// }
-// test()
 
 $(document).ready(function () {
   const X = 'X' // X=Player2//if get this working add image
