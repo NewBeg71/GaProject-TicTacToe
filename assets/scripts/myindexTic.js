@@ -5,9 +5,9 @@ const config = require('./config')
 
 $(() => {
   setAPIOrigin(location, config)
-}) */
+})
 
-require('./example')
+require('./example') */
 
 // Create a Sign-up Button
 
