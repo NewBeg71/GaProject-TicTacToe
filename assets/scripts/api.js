@@ -2,7 +2,7 @@
 
 const app = require('../app.js')
 
-const index = function () {
+const create = function (data) {
   return $.ajax({
     url: app.host + '/books',
     method: 'GET'

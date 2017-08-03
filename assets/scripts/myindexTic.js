@@ -28,6 +28,10 @@ $(document).ready(function () {
   const three_two = $('#three_two')
   const three_three = $('#three_three')
 
+  let scoreOne = 0
+  let scoreTwo = 0
+  let scoreTie = 0
+
   $('#boardContainer tr td').on('click', function () {
     if (one_one.hasClass('O') && one_two.hasClass('O') && one_three.hasClass('O') ||
         two_one.hasClass('O') && two_two.hasClass('O') && two_three.hasClass('O') ||
@@ -37,7 +41,7 @@ $(document).ready(function () {
         one_three.hasClass('O') && two_three.hasClass('O') && three_three.hasClass('O') ||
         one_one.hasClass('O') && two_two.hasClass('O') && three_three.hasClass('O') ||
         one_three.hasClass('O') && two_two.hasClass('O') && three_one.hasClass('O')) {
-      alert('Winner is Player 1')
+      alert('Winner is Player 1' + scoreOne + 'wins')
       $('#boardContainer tr td').text('+')
       $('#boardContainer tr td').removeClass('disable')
       $('#boardContainer tr td').removeClass('O')
@@ -57,7 +61,7 @@ $(document).ready(function () {
       $('#boardContainer tr td').removeClass('O')
       $('#boardContainer tr td').removeClass('X')
     } else if
-    (turns === 9) {
+    (turns === 8) {
       alert('Cat\'s Game: A Tie!')
       $('#boardContainer tr td').text('+')
       $('#boardContainer tr td').removeClass('disable')

@@ -35,27 +35,55 @@
 
     </section>
 
-    <section class= "container" id = "navBar">
+    <section class = "container" id ="createGa">
 
-      <!--sign up--> <!--and sign inbuttons/forms-->
+      <div class = "col-sm-12" id = "createGa">
 
-        <div class = "col-sm-3" id = "signIn">
+      <form>
+
+        <input name="credentials[email]" type="text" value="an@example.email">
+        <input name="credentials[password]" type="password" value="an example password">
+        <input name="credentials[password_confirmation]" type="password" value="an example password">
+
+      </form>
+
+      </div>
+
+    </section>
+
+    <section class = "container" id ="signInGa">
+
+      <div class = "col-sm-12" id = "signInGa">
+
+      <form>
+
+        <input name="credentials[email]" type="text" value="an@example.email">
+        <input name="credentials[password]" type="password" value="an example password">
+
+      </form>
+
+      </div>
+
+    </section>
+
+    <!--<section class= "container" id = "navBar">
+
+        <div class = "col-sm-3" id = "signInMe">
 
           <button type="button" class="btn btn-primary">Sign In</button>
-          <!--<input type = "" />-->
 
         </div>
 
         <div class = "col-sm-3" id = "signUp">
 
           <button type="button" class="btn btn-primary">Sin Up</button>
-          <!--<input type = "" />-->
+
         </div>
 
         <div class = "col-sm-3" id = "contactForm">
 
           <button type="button" class="btn btn-primary">Contact Form</button>
-          <!--<input type = "" />-->
+
         </div>
 
       <div = "col-sm-3">
@@ -64,7 +92,7 @@
 
       </div>
 
-    </section>
+    </section>-->
 
     <section class = "container" id = "mainPage">
 
@@ -118,19 +146,19 @@
 
       <div>
 
-        <h3 id = 'oneWins'>Player 1 wins: </h3>
+        <h3 id = 'oneWins'>Player 1 wins: <span id = 'span1'>0</span></h3>
 
       </div>
 
       <div>
 
-        <h3 id = 'twoWins'>Player 2 wins: </h3>
+        <h3 id = 'twoWins'>Player 2 wins: <span id = 'span2'>0</span></h3>
 
       </div>
 
       <div>
 
-        <h3 id = 'ties'> Cat's Games<small> This is a tie!: </small></h3>
+        <h3 id = 'ties'> Cat's Games<small> This is a tie!: </small><span id = 'spanT'>0</span></h3>
 
       </div>
 
