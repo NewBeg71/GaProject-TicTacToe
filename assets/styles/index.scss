@@ -1,7 +1,7 @@
 
-$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+/* $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-@import './myIndexTic';
+@import './myIndexTic'; */
 
 // $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 // @import '~bootstrap-sass/assets/stylesheets/bootstrap';
@@ -158,6 +158,12 @@ table td:hover {
   padding: 6px 12px;
   font-size: 14px;
   border-radius: 4px;
+  opacity: .8;
+}
+
+#reset:hover {
+  background-color: #337ab7;
+  opacity: 1;
 }
 
 #footerContact {
