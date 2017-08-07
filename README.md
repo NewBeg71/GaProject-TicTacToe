@@ -1,4 +1,5 @@
 # Project 1/GA-WDI-PROV/TicTacToe
+URL for deployed game: https://newbeg71.github.io/GaProject-TicTacToe/index.html
 
 ## Objectives
 
@@ -32,7 +33,7 @@
   * Almost Complete.  api is a problem
 - Build a dynamic game that allows two players to compete
   * Almost Complete.  Want to have game follow my original logic (see earlier commits).
-  I want the player to click an image, whichrepresents the players turn then allows that
+  I want the player to click an image, which represents the players turn then allows that
   player turn to click a '.cell' and have that image placed in it.
 
 ## Bonus
