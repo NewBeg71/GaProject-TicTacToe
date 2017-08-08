@@ -40,11 +40,26 @@
 
       <div class = "col-sm-12" id = "createGa">
 
-      <form>
+      <!--<<form>
 
         <input name="credentials[email]" type="text" value="Enter Your Email">
         <input name="credentials[password]" type="password" value="Enter Your Password">
         <input name="credentials[password_confirmation]" type="password" value="Verify Your Password">
+
+      </form>-->
+
+      <form id="game-signup" action="?action=signup" method="post">
+
+        <fieldset>
+
+          <label for="signup-email">Sign up to Play the Game!</label>
+          <input type="text" name="signup-email" id="signup-email" value = "Enter Your Email"/>
+          <input type = "password" name = "sign-up password" value = "Enter Your Password">
+          <input type = "password" name = "password confirmation" value = "Verify your password">
+          <input type="submit" id="signup-button" value="Sign Me Up!" />
+          <p id="signup-response"></p>
+
+        </fieldset>
 
       </form>
 
@@ -58,8 +73,10 @@
 
       <form>
 
+        <label for = "credentials">Sign In to Play the Game!</label>
         <input name="credentials[email]" type="text" value="Enter Your Email">
         <input name="credentials[password]" type="password" value="Enter Your Password">
+        <input type="submit" id="signin-button" value="Let's Play the Game!" />
 
       </form>
 
