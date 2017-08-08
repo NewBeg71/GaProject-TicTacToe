@@ -1,31 +1,35 @@
-'use strict'
+'use strict';
+//remove signIn and signOut
+const app = require('../app.js');
 
-const onSuccess = function (data) {
-  console.log('data is ', data)
-  if (!data) {
-    console.warn('Either you deleted something, or something went wrong.')
-  } else if (data.book) {
-    console.log(data.book)
-  } else {
-    console.table(data.books)
-  }
-}
+//remove me before code-along
+const signInSuccess = (data) => {
+  app.user = data.user;
+  console.log(app);
+};
 
-const onUpdateSuccess = function () {
-  console.log('You successfully updated the book!')
-}
+//remove me before code-along
+const signOutSuccess = () => {
+  app.user = null;
+  console.log(app);
+};
 
-const onCreateSuccess = function () {
-  console.log('You have successfully created a new book!')
-}
+const changePasswordSuccess = () => {
+  console.log("Password Successfully Changed.");
+};
 
-const onError = function (response) {
-  console.error(response)
-}
+const success = (data) => {
+  console.log(data);
+};
+
+const failure = (error) => {
+  console.error(error);
+};
 
 module.exports = {
-  onSuccess,
-  onUpdateSuccess,
-  onError,
-  onCreateSuccess
-}
+  failure,
+  success,
+  signInSuccess,
+  signOutSuccess,
+  changePasswordSuccess
+};

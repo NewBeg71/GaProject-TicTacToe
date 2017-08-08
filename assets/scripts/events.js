@@ -1,75 +1,50 @@
-'use strict'
+'use strict';
 
-const booksApi = require('./api.js')
-const booksUi = require('./ui.js')
-const getFormFields = require('../../../lib/get-form-fields')
+const api = require('./api');
+const ui = require('./ui');
+const getFormFields = require('../../../lib/get-form-fields.js');
 
-// get in the habit of naming your handlers, it eases debugging.
-//
-// also, follow a convention for handlers. here, I name my handler
-// beginning with 'on' to denote that it is done when the GET /books
-// button is clicked
-const onGetBooks = function (event) {
-  event.preventDefault()
+const onSignUp = function(event){
+  event.preventDefault();
+  let data = getFormFields(event.target);
+  api.signUp(data)
+  .done(ui.success)
+  .fail(ui.fail);
+};
 
-  booksApi.index()
-    .then(booksUi.onSuccess)
-    .catch(booksUi.onError)
-}
+const onSignIn = function(event){
+  event.preventDefault();
+  let data = getFormFields(event.target);
+  api.signIn(data)
+  .done(ui.signInSuccess)
+  .fail(ui.fail);
+};
 
-const onGetBook = function (event) {
-  event.preventDefault()
-  const data = getFormFields(event.target)
-  const book = data.book
+const onSignOut = function(event){
+  event.preventDefault();
+  let data = getFormFields(event.target);
+  api.signOut(data)
+  .done(ui.signOutSuccess)
+  .fail(ui.fail);
+};
 
-  if (book.id.length !== 0) {
-    booksApi.show(book.id)
-      .then(booksUi.onSuccess)
-      .catch(booksUi.onError)
-  } else {
-    console.log('Please provide a book id!')
-  }
-}
+const onChangePassword = function(event){
+  event.preventDefault();
+  let data = getFormFields(event.target);
+  api.changePassword(data)
+  .done(ui.changePasswordSuccess)
+  .fail(ui.fail);
+};
 
-const onUpdateBook = function (event) {
-  event.preventDefault()
-  const data = getFormFields(event.target)
 
-  if (data.book.id.length !== 0) {
-    booksApi.update(data)
-      .then(booksUi.onUpdateSuccess)
-      .catch(booksUi.onError)
-  } else {
-    console.log('Please provide a book id!')
-  }
-}
 
-const onDeleteBook = function (event) {
-  event.preventDefault()
-  const data = getFormFields(event.target)
-  const book = data.book
-
-  if (book.id.length !== 0) {
-    booksApi.destroy(book.id)
-      .then(booksUi.onSuccess)
-      .catch(booksUi.onError)
-  } else {
-    console.log('Please provide a book id!')
-  }
-}
-
-const onCreateBook = function (event) {
-  event.preventDefault()
-  const data = getFormFields(event.target)
-  booksApi.create(data)
-    .then(booksUi.onCreateSuccess)
-    .catch(booksUi.onError)
-}
+const addHandlers = () => {
+  $('#sign-up').on('submit', onSignUp);
+  $('#sign-in').on('submit', onSignIn);
+  $('#sign-out').on('submit', onSignOut);
+  $('#change-password').on('submit', onChangePassword);
+};
 
 module.exports = {
-  onGetBooks,
-  onGetBook,
-  onUpdateBook,
-  onDeleteBook,
-  onCreateBook
-}
+  addHandlers,
+};
