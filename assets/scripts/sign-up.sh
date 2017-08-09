@@ -6,9 +6,9 @@
     --header "Content-Type: application/json" \
     --data '{
     "credentials": {
-      "email": "dfwg4@hotmail.com",
-      "password": "KashmiR124",
-      "password_confirmation": "KashmiR124"
+      "email": "${EMAIL}",
+      "password": "${PASSWORD}",
+      "password_confirmation": "${PASSWORD}"
     }
   }'
 
