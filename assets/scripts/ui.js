@@ -1,30 +1,28 @@
-'use strict';
-//remove signIn and signOut
-const app = require('../app.js');
+'use strict'
 
-//remove me before code-along
+const app = require('../app')
+
 const signInSuccess = (data) => {
-  app.user = data.user;
-  console.log(app);
-};
+  app.user = data.user
+  console.log(app)
+}
 
-//remove me before code-along
 const signOutSuccess = () => {
-  app.user = null;
-  console.log(app);
-};
+  app.user = null
+  console.log(app)
+}
 
 const changePasswordSuccess = () => {
-  console.log("Password Successfully Changed.");
-};
+  console.log('Password Successfully Changed.')
+}
 
 const success = (data) => {
-  console.log(data);
-};
+  console.log(data)
+}
 
 const failure = (error) => {
-  console.error(error);
-};
+  console.error(error)
+}
 
 module.exports = {
   failure,
@@ -32,4 +30,4 @@ module.exports = {
   signInSuccess,
   signOutSuccess,
   changePasswordSuccess
-};
+}

@@ -1,15 +1,17 @@
-curl --include --request POST http://localhost:4741/sign-in \
-  URL_PATH="/sign-in"
-  API="${API_ORIGIN: http://tic-tac-toe.wdibos.com/}"
+
+  URL_PATH="sign-in"
+  API="http://tic-tac-toe.wdibos.com/"
+  curl --include --request POST "${API}${URL_PATH}" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
-      "email": "'"{}$EMAIL}"'",
+      "email": "'"${EMAIL}"'",
       "password": "'"${PASSWORD}"'",
       "password_confirmation": "'"${PASSWORD}"'"
     }
   }'
 
-echo
+
+echo "${API}${URL_PATH}"
