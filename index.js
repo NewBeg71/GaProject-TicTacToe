@@ -9,3 +9,8 @@ require('./assets/scripts/index.js')
 require('./assets/scripts/myindexTic.js')
 // styles
 require('./assets/styles/index.scss')
+const events = require('./assets/scripts/events')
+
+$(() => {
+  $('#sign-up').on('submit', events.onSignUp)
+})

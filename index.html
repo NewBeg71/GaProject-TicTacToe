@@ -48,7 +48,7 @@
 
       </form>-->
 
-      <form id="game_signup" method="post">
+      <!-- <form id="game_signup" method="post">
 
         <fieldset>
 
@@ -61,6 +61,63 @@
 
         </fieldset>
 
+      </form> -->
+      <form id="change-password">
+
+        <form id="sign-up">
+        <fieldset>
+          <legend>Sign up!</legend>
+          <input type="text" name="credentials[email]" value="" placeholder="email">
+          <input type="password" name="credentials[password]" value="" placeholder="password">
+          <input type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+          <p id = "sign-up-success" class = "successMessage hidden">Sign Up Successfull!</p>
+          <p id = "sign-up-error" class = "errorMessage hidden">Sorry! Username Taken or Passwords Do Not Match</p>
+          <input type="submit" name="submit" value="Sign up!!">
+        </fieldset>
+      </form>
+      
+      </form>
+
+      </div>
+
+    </section>
+
+    <section class = "container" id ="createGa">
+
+      <div class = "col-sm-12" id = "createGa">
+
+      <!--<<form>
+
+        <input name="credentials[email]" type="text" value="Enter Your Email">
+        <input name="credentials[password]" type="password" value="Enter Your Password">
+        <input name="credentials[password_confirmation]" type="password" value="Verify Your Password">
+
+      </form>-->
+
+      <!-- <form id="game_signup" method="post">
+
+        <fieldset>
+
+          <label for="signup-email">Sign up to Play the Game!</label>
+          <input type="text" name="signup-email" id="signup-email" value = "Enter Your Email"/>
+          <input type = "password" name = "sign-up password" value = "Enter Your Password">
+          <input type = "password" name = "password confirmation" value = "Verify your password">
+          <input type="submit" id="signup-button" value="Sign Me Up!" />
+          <p id="signup-response"></p>
+
+        </fieldset>
+
+      </form> -->
+      <form id="change-password">
+
+                <fieldset>
+                  <legend>Change Password</legend>
+                  <input type="password" name="passwords[old]" value="" placeholder="Old Password">
+                  <input type="password" name="passwords[new]" value="" placeholder="New Password">
+                  <p id = "change-pass-sucess" class = "successMessage hidden">Password Successfully Changed!</p>
+                  <p id = "change-pass-fail" class = "errorMessage hidden">Original Password Incorrect!</p>
+                  <input type="submit" name="submit" value="Change Password">
+                </fieldset>
       </form>
 
       </div>

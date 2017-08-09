@@ -1,6 +1,10 @@
 'use strict'
 
-const app = require('../app')
+const app = require('./app')
+
+const signUpSuccess = (data) => {
+  console.log(data)
+}
 
 const signInSuccess = (data) => {
   app.user = data.user
@@ -29,5 +33,6 @@ module.exports = {
   success,
   signInSuccess,
   signOutSuccess,
-  changePasswordSuccess
+  changePasswordSuccess,
+  signUpSuccess
 }
