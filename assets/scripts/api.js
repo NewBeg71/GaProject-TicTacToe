@@ -1,49 +1,60 @@
 'use strict'
 
-const app = require('./app')
+const app = require('./app.js')
 
-const signUp = function(data) {
-  console.log(data)
+const signUp = function (data) {
+  // console.log(data)
   return $.ajax({
     url: app.host + '/sign-up/',
     method: 'POST',
-    data
+    data: {
+      'credentials': {
+        'email': data.credentials.email,
+        'password': data.credentials.password,
+        'password-confirmation': data.credentials.password
+      }
+    }
   })
 }
 
-const signIn = function(data){
-  console.log(data)
+const signIn = function (data) {
+  // console.log(data)
   return $.ajax({
     url: app.host + '/sign-in/',
     method: 'POST',
-    data
-  });
-};
+    data: {
+      'credentials': {
+        'email': data.credentials.email,
+        'password': data.credentials.password
+      }
+    }
+  })
+}
 
-const signOut = function(){
+const signOut = function () {
   return $.ajax({
     method: 'DELETE',
     url: app.host + '/sign-out/' + app.user.id,
     headers: {
-      Authorization: 'Token token=' + app.user.token,
-    },
-  });
-};
+      Authorization: 'Token token=' + app.user.token
+    }
+  })
+}
 
-const changePassword = function(data){
+const changePassword = function (data) {
   return $.ajax({
     method: 'PATCH',
     url: app.host + '/change-password/' + app.user.id,
     headers: {
-      Authorization: 'Token token=' + app.user.token,
+      Authorization: 'Token token=' + app.user.token
     },
-    data: data,
-  });
-};
+    data
+  })
+}
 
 module.exports = {
   signUp,
   signIn,
   signOut,
-  changePassword,
-};
+  changePassword
+}
