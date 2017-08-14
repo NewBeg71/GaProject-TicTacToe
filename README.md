@@ -28,7 +28,8 @@ URL for deployed game: https://newbeg71.github.io/GaProject-TicTacToe/index.html
 - Use your programming skills to map out the game logic for a simple game like Tic Tac Toe
   * Complete
 - Separate HTML, CSS, and JavaScript files in your application
-  * Complete.  With difficulty!  Need greater understanding of VC (ie GitHib)
+  * Complete.  With difficulty!  Need greater understanding of VC (ie GitHib) and
+  modular programming.  Need to test more often.
 - - Build an application to a spec that someone else gives you
   * Almost Complete.  api is a problem
 - Build a dynamic game that allows two players to compete
@@ -41,7 +42,7 @@ URL for deployed game: https://newbeg71.github.io/GaProject-TicTacToe/index.html
 - Compete from separate devices)
   * Not even close - future endeavor
 - Communicate with a back-end (which we'll provide for you) to store the state of your game.
-  * Working on it (August 3, 2017)
+  * Working on it (August 3, 2017) - not even close
 
 ## Design Responsibly
 ### Need to complete
@@ -78,19 +79,21 @@ URL for deployed game: https://newbeg71.github.io/GaProject-TicTacToe/index.html
 
 ## Resources
 
-http://framebox.org/ACMEl-bKAMVC - for wire-framing instead of a picture of sketch
-https://www.w3schools.com/ - even though it is outdated I like following the examples
+* http://framebox.org/ACMEl-bKAMVC - for wire-framing instead of a picture of sketch
+* https://www.w3schools.com/ - even though it is outdated I like following the examples
 to see exactly how the work (The bootstrap section was much better help than bootstrap's
 own site)
-StackOverflow https://stackoverflow.com/ - can be confusing because the various answer and their level of complexity,
+* StackOverflow https://stackoverflow.com/ - can be confusing because the various answer and their level of complexity,
 however if you take your time you can usually find what you are looking for
-https://developer.mozilla.org/en-US/docs/Web/JavaScript
-http://javascriptissexy.com/how-to-learn-javascript-properly/ - Need to get more
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript
+* http://javascriptissexy.com/how-to-learn-javascript-properly/ - Need to get more
 involved in this site
 
 ## Take Away
 
- * Follow Instructions (& take your time to read and understand them)
+ * Follow Instructions (& take your time to read and understand them).  I do well
+ with codeacademy, etc, but fall apart when programming from scratch, because I am
+ need to learn more about REPL and Chrome developer tools
  * Take my time (& sometimes step away - its amazing that after five hours a five minute walk
    leads to a revelation)
  * KISS (the story of my Life - thanks Buck) - I over think things.  Stick with
@@ -106,7 +109,8 @@ involved in this site
 ## Plans for the Game
 
   * Clean up alert message and timing of updating the placement of X's and O's
-  * Replace X's and O's with images - dead and buffet logos
+  * Replace X's and O's with images - dead and buffet logos - tried suggestion from peer (Nick)
+  and copied link from GitHub and it id not work - I beleive I know the problem
   * Create a "Game Landing Page" then have it point to this game, expanded memory game,
   boggle and hangman (from first cohort)
   * Spend more time with styling - I like it!
