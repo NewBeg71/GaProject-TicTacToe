@@ -1,31 +1,45 @@
 'use strict'
 
-const app = require('./app')
+const app = require('./app.js')
 
 const signUpSuccess = (data) => {
-  console.log(data)
+  $('#signUp').modal('hide')
 }
 
 const signInSuccess = (data) => {
   app.user = data.user
-  console.log(app)
+  $('#signedInUser').text(data.user.email)
+  $('input').val('')
+  $('#log-in-to-play').hide()
 }
 
 const signOutSuccess = () => {
   app.user = null
-  console.log(app)
+  // console.log(app)
+  $('#signedInUser').text('')
+  $('.game-board').hide()
+  $('#log-in-to-play').show()
+  $('#myAcct').modal('hide')
 }
 
 const changePasswordSuccess = () => {
-  console.log('Password Successfully Changed.')
+  // console.log('Password Successfully Changed.')
+  $('input').val('')
+  $('#myAcct').modal('hide')
+}
+
+const gamePostSuccess = (data) => {
+  $('.game-board').show()
+  app.game = data.game
+  app.game.id = data.game.id
 }
 
 const success = (data) => {
-  console.log(data)
+  // console.log(data)
 }
 
 const failure = (error) => {
-  console.error(error)
+  // console.log(error)
 }
 
 module.exports = {
@@ -34,5 +48,6 @@ module.exports = {
   signInSuccess,
   signOutSuccess,
   changePasswordSuccess,
-  signUpSuccess
+  signUpSuccess,
+  gamePostSuccess
 }
