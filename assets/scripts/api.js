@@ -1,6 +1,7 @@
 'use strict'
 
 const app = require('./app.js')
+const getFormFields = require('../../lib/get-form-fields.js')
 
 const signUp = function (data) {
   // console.log(data)

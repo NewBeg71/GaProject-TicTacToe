@@ -5,7 +5,9 @@ const config = require('./config')
 const authEvents = require('./events.js')
 
 $(() => {
+  $('#boardContainer tr td').hide()
   setAPIOrigin(location, config)
+  authEvents.addHandlers()
 })
 
 // use require with a reference to bundle the file and use it in this file

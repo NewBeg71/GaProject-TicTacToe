@@ -17,7 +17,7 @@ const signOutSuccess = () => {
   app.user = null
   // console.log(app)
   $('#signedInUser').text('')
-  $('.game-board').hide()
+  $('#boardContainer tr td').hide()
   $('#log-in-to-play').show()
   $('#myAcct').modal('hide')
 }
@@ -29,7 +29,7 @@ const changePasswordSuccess = () => {
 }
 
 const gamePostSuccess = (data) => {
-  $('.game-board').show()
+  $('#boardContainer tr td').show()
   app.game = data.game
   app.game.id = data.game.id
 }
