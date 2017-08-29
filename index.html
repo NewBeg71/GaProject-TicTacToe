@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href = "./assets/styles/index.scss" rel="stylesheet" type = "text/css"/>
+
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+    <title>Tic-Tac-Toe</title>
+
+  </head>
+
+  <body>
+
+    <section class = "container" id = "headBar">
+
+        <div class = 'col-sm-12' id ="headBar">
+
+          <h1>Tic Tac Toe<small> A game of stratergy</small></h1>
+
+        </div>
+
+    </section>
+
+    <section class = "container" id ="sign-up-style">
+
+      <div class = "col-sm-12" id = "sign-up-style">
+
+      <!--<<form>
+
+        <input name="credentials[email]" type="text" value="Enter Your Email">
+        <input name="credentials[password]" type="password" value="Enter Your Password">
+        <input name="credentials[password_confirmation]" type="password" value="Verify Your Password">
+
+      </form>-->
+
+      <!-- <form id="game_signup" method="post">
+
+        <fieldset>
+
+          <label for="signup-email">Sign up to Play the Game!</label>
+          <input type="text" name="signup-email" id="signup-email" value = "Enter Your Email"/>
+          <input type = "password" name = "sign-up password" value = "Enter Your Password">
+          <input type = "password" name = "password confirmation" value = "Verify your password">
+          <input type="submit" id="signup-button" value="Sign Me Up!" />
+          <p id="signup-response"></p>
+
+        </fieldset>
+
+      </form> -->
+
+
+        <form id="sign-up">
+        <fieldset>
+          <legend>Sign up!</legend>
+          <input type="text" name="credentials[email]" value="" placeholder="email">
+          <input type="password" name="credentials[password]" value="" placeholder="password">
+          <input type="password" name="credentials[password_confirmation]" value="" placeholder="password confirmation">
+          <p id = "sign-up-success" class = "successMessage hidden">Sign Up Successfull!</p>
+          <p id = "sign-up-error" class = "errorMessage hidden">Sorry! Username Taken or Passwords Do Not Match</p>
+          <input type="submit" name="submit" value="Sign up!">
+        </fieldset>
+
+      </form>
+
+      </div>
+
+    </section>
+
+    <section class = "container" id ="change-password-style">
+
+      <div class = "col-sm-12" id = "change-password-style">
+
+      <!--<<form>
+
+        <input name="credentials[email]" type="text" value="Enter Your Email">
+        <input name="credentials[password]" type="password" value="Enter Your Password">
+        <input name="credentials[password_confirmation]" type="password" value="Verify Your Password">
+
+      </form>-->
+
+      <!-- <form id="game_signup" method="post">
+
+        <fieldset>
+
+          <label for="signup-email">Sign up to Play the Game!</label>
+          <input type="text" name="signup-email" id="signup-email" value = "Enter Your Email"/>
+          <input type = "password" name = "sign-up password" value = "Enter Your Password">
+          <input type = "password" name = "password confirmation" value = "Verify your password">
+          <input type="submit" id="signup-button" value="Sign Me Up!" />
+          <p id="signup-response"></p>
+
+        </fieldset>
+
+      </form> -->
+      <form id="change-password">
+
+                <fieldset>
+                  <legend>Change Password!</legend>
+                  <input type="password" name="passwords[old]" value="" placeholder="Old Password">
+                  <input type="password" name="passwords[new]" value="" placeholder="New Password">
+                  <p id = "change-password-success" class = "successMessage hidden">Password Successfully Changed!</p>
+                  <p id = "change-password-fail" class = "errorMessage hidden">Original Password Incorrect!</p>
+                  <input type="submit" name="submit" value="Change Password!">
+                </fieldset>
+      </form>
+
+      </div>
+
+    </section>
+
+    <section class = "container" id ="sign-in-style">
+
+      <div class = "col-sm-12" id = "sign-in-style">
+
+        <form id="sign-in">
+          <fieldset>
+            <legend>Sign in!</legend>
+            <input type="text" name="credentials[email]" value="" placeholder="email">
+            <input type="password" name="credentials[password]" value="" placeholder="password">
+            <input type="submit" name="submit" value="Sign in!">
+          </fieldset>
+        </form>
+
+      </div>
+
+    </section>
+
+    <section class = "container" id ="sign-out-style">
+
+      <div class = "col-sm-12" id = "sign-outstyle">
+
+        <form id="sign-out">
+        <fieldset>
+          <legend>Sign out!</legend>
+          <input type="submit" name="submit" value="Sign out!">
+        </fieldset>
+      </form>
+
+      </div>
+
+    </section>
+
+    <!--<section class= "container" id = "navBar">
+
+        <div class = "col-sm-3" id = "signInMe">
+
+          <button type="button" class="btn btn-primary">Sign In</button>
+
+        </div>
+
+        <div class = "col-sm-3" id = "signUp">
+
+          <button type="button" class="btn btn-primary">Sin Up</button>
+
+        </div>
+
+        <div class = "col-sm-3" id = "contactForm">
+
+          <button type="button" class="btn btn-primary">Contact Form</button>
+
+        </div>
+
+      <div = "col-sm-3">
+
+        <h3 id ='greeting'>Have Fun!</h3>
+
+      </div>
+
+    </section>-->
+
+    <section class = "container" id = "mainPage">
+
+      <div class = "col-sm-8" id = 'left_main'>
+
+        <table id = 'boardContainer'>
+
+          <tr>
+
+            <td class = "cell" id = 'one_one'>+</td>
+            <td class = "cell" id = 'one_two'>+</td>
+            <td class = "cell" id = 'one_three'>+</td>
+
+          </tr>
+
+          <tr>
+
+            <td class = "cell" id = 'two_one'>+</td>
+            <td class = "cell" id = 'two_two'>+</td>
+            <td class = "cell" id = 'two_three'>+</td>
+
+          </tr>
+
+          <tr>
+
+            <td class = "cell" id = 'three_one'>+</td>
+            <td class = "cell" id = 'three_two'>+</td>
+            <td class = "cell" id = 'three_three'>+</td>
+
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div class = "col-sm-4" id ='right_main'>
+
+      <div>
+
+        <img src = "https://github.com/NewBeg71/GaProject-TicTacToe/blob/ghe/Images/deadlogo.jpg" class="img-rounded" id = "deadLogo" alt="Dead Head" width="104" height="86"/>
+        <h6>Player 1</h6>
+
+      </div>
+
+      <div>
+<!-- ./Imagesbuffet logo.jpg-->
+      <img src = "https://github.com/NewBeg71/GaProject-TicTacToe/blob/ghe/Images/buffet%20logo.jpg" class="img-rounded" alt="Parrot Head" width="104" height="86"/>
+        <h6>Player 2</h6>
+
+      </div>
+
+      <div>
+
+        <h3 id = 'oneWins'>Player 1 wins: <p id = 'span1'>0</p></h3>
+
+      </div>
+
+      <div>
+
+        <h3 id = 'twoWins'>Player 2 wins: <p id = 'span2'>0</p></h3>
+
+      </div>
+
+      <div>
+
+        <h3 id = 'ties'> Cat's Games<small> This is a tie!: </small><p id = 'spanT'>0</p></h3>
+
+      </div>
+
+      <div>
+
+        <button id = 'reset'>Play Again</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    <section class = "container" id = "footer">
+
+      <div class = "col-sm-12" id = "footerContact">If you have any suggestions or comments contact me here<a href="mailto:dfwg4@hotmail.com"> email </a></div>
+
+    </section>
+
+    <!--<script src = './assets/scripts/myindexTic.js'></script>-->
+
+  </body>
+
+</html>
